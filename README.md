@@ -19,5 +19,6 @@ Application still under development
 - ``React Native Gesture Handler``
 - ``React Hook Form``
 - ``React Hook Form Resolvers Yup``
+- ``React Navigation``
 - ``Styled-Components``
 - ``CSS``
