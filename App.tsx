@@ -1,4 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
 import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
 import theme from './src/global/styles/theme'

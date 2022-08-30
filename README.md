@@ -20,5 +20,8 @@ Application still under development
 - ``React Hook Form``
 - ``React Hook Form Resolvers Yup``
 - ``React Navigation``
+- ``AsyncStorage``
+- ``React Native uuid``
+- ``Intl for Android``
 - ``Styled-Components``
 - ``CSS``
