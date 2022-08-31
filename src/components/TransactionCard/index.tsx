@@ -33,9 +33,3 @@ export function TransactionCard({ data }: Props){
         </Container>
     )
 }
-
-
-// 
-// 
-// 
-// 

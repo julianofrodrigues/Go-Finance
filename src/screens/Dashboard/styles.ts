@@ -53,7 +53,7 @@ export const UserName = styled.Text`
     font-size:  ${RFValue(18)}px;
 `;
 
-export const LogoutButton = styled(BorderlessButton)`
+export const LogoutButton = styled.TouchableOpacity`
     
 `;
 
@@ -92,8 +92,7 @@ export const TransactionsList = styled(FlatList as new () => FlatList<DataListPr
 export const LoadContainer = styled.View`
     flex: 1;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 `
 
 

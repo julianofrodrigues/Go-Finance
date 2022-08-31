@@ -23,5 +23,8 @@ Application still under development
 - ``AsyncStorage``
 - ``React Native uuid``
 - ``Intl for Android``
+- ``Victory Native``
+- ``React Native SVG``
+- ``Date FNS``
 - ``Styled-Components``
 - ``CSS``

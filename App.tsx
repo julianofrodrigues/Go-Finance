@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
 import theme from './src/global/styles/theme'
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold } from '@expo-google-fonts/poppins'
@@ -21,6 +22,7 @@ export default function App() {
   return( 
     <ThemeProvider theme={theme}>
       <NavigationContainer>
+          <StatusBar barStyle="light-contentr" />
           <AppRoutes />
       </NavigationContainer>
     </ThemeProvider>
