@@ -26,5 +26,6 @@ Application still under development
 - ``Victory Native``
 - ``React Native SVG``
 - ``Date FNS``
+- ``React Native Svg Transformer``
 - ``Styled-Components``
 - ``CSS``

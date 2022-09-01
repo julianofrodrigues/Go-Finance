@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
+import { KeyboardAvoidingView } from "react-native";
 
-export const Container = styled.View`
+export const Container = styled(KeyboardAvoidingView).attrs({behavior: "height"})`
     flex: 1;
     background-color: ${({theme}) => (theme.colors.background)};  
 `;
