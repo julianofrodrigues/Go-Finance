@@ -9,15 +9,21 @@ The application consists of 3 screens, the initial one with a history and cards 
 <details> <summary> Click Here to see screenshots </summary>
   <h2>Home</h2>
   
-  ![Home](https://i.imgur.com/KDBvWV2.png) 
+  <p align="center">
+    ![Home](https://i.imgur.com/KDBvWV2.png)
+  </p>
   
   <h2> Register </h2>
-  
-  ![Register](https://i.imgur.com/xh4nV7k.png) 
-  
+
+  <p align="center">
+    ![Register](https://i.imgur.com/xh4nV7k.png) 
+  </p>
+
   <h2> Graphic </h2>
-  
-  ![Graphic](https://i.imgur.com/W1KAQ8G.png) 
+
+  <p align="center">
+    ![Graphic](https://i.imgur.com/W1KAQ8G.png) 
+  </p>
     
 </details>
 
@@ -25,7 +31,7 @@ The application consists of 3 screens, the initial one with a history and cards 
 To try it is very simple:<br>
 -Clone the repository
 ```bash
-$ git clone 
+$ git clone https://github.com/julianofrodrigues/Go-Finances
 ```
 -Download the libraries
 ```bash
