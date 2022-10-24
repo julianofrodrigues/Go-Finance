@@ -1,11 +1,40 @@
 <h1 align="center"> 💵 Go-Finances 💸 </h1>
 
-# Project Summary
+# Project Summary 💹
  Application developed for users to control their finances 🤑
 
-# Heads up
-Application still under development
+# Layout 🤳🏻
+The application consists of 3 screens, the initial one with a history and cards showing inputs, outputs and the subtraction / addition of everything, another one dedicated to the input and output of your consumption, and another with a graph with % of your monthly consumption.
 
+<details> <summary> Click Here to see screenshots </summary>
+  <h2>Home</h2>
+  
+  ![Home](https://i.imgur.com/KDBvWV2.png) 
+  
+  <h2> Register </h2>
+  
+  ![Register](https://i.imgur.com/xh4nV7k.png) 
+  
+  <h2> Graphic </h2>
+  
+  ![Graphic](https://i.imgur.com/W1KAQ8G.png) 
+    
+</details>
+
+## 📁 Project Access
+To try it is very simple:<br>
+-Clone the repository
+```bash
+$ git clone 
+```
+-Download the libraries
+```bash
+$ expo install
+```
+-Start the App
+```bash
+$ expo start
+```
 
 ## ✔️ Techniques and technologies used
 

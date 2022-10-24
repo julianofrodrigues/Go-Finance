@@ -1,10 +1,13 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { ActivityIndicator } from "react-native";
 import { HighlightCard } from "../../components/HighlightCard";
 import { TransactionCard, TransactionCardProps } from "../../components/TransactionCard";
-import { Container, Header, Icon, Photo, User, UserGreeting, UserInfo, UserName, UserWrapper, HighlightCards, Transactions, Title, TransactionsList, LogoutButton, LoadContainer } from './styles'
+import { Container, Header, Icon, Photo, User, UserGreeting, UserInfo, UserName, UserWrapper, HighlightCards, Transactions, Title, TransactionsList, LogoutButton, LoadContainer } from './styles';
+import LogoSvg from '../../assets/logo.svg'; 
+import { RFValue } from "react-native-responsive-fontsize";
+import { date } from "yup";
 
 export interface DataListProps extends TransactionCardProps {
     id: string
@@ -25,6 +28,26 @@ export function Dashboard(){
     const [isLoading, setLoading] = useState(true)
     const [transactions, setTransactions] = useState<DataListProps[]>([]);
     const [highLightData, setHighLightData] = useState<HighLightData>( {} as HighLightData );
+    const [greeting, setGreeting] = useState('');
+    var data = new Date();
+    var dia = String(data.getDate()).padStart(2, '0');
+    var mes = String(data.getMonth() + 1).padStart(2, '0');
+    var ano = data.getFullYear();
+    const dataAtual = dia + '/' + mes + '/' + ano;
+    
+
+    useEffect(() => {
+        const currentHour = new Date().getHours();
+        if(currentHour < 12){
+            setGreeting('Bom Dia!');
+        }
+        else if(currentHour >= 12 && currentHour < 18){
+            setGreeting('Boa Tarde!');
+        }
+        else{
+            setGreeting('Boa Noite!');
+        }
+    }, [])
      
 
     function getLastTransactionDate(collection: DataListProps[], type: 'positive' | 'negative'){
@@ -89,6 +112,7 @@ export function Dashboard(){
 
 
     return(
+
         <Container>            
         { 
             isLoading ? 
@@ -99,15 +123,12 @@ export function Dashboard(){
             <Header>
                 <UserWrapper>
                     <UserInfo>
-                        <Photo source={{uri: 'https://avatars.githubusercontent.com/u/46505899?v=4'}} />
+                            <LogoSvg width={RFValue(30)} height={RFValue(30)} />
                         <User>
-                            <UserGreeting>Olá,</UserGreeting>
-                            <UserName>Juliano</UserName>
+                            <UserGreeting>{greeting}</UserGreeting>
                         </User>
                     </UserInfo>
-                    <LogoutButton onPress={() => {}}>
-                        <Icon name="power" />
-                    </LogoutButton>
+                    <UserGreeting>{dataAtual}</UserGreeting>
                 </UserWrapper>
             </Header>
 

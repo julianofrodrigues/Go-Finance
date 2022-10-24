@@ -37,7 +37,7 @@ export const Photo = styled.Image`
 `;
 
 export const User = styled.View`
-    margin-left: 17px;
+    margin-left: 10px;
 `;
 
 export const UserGreeting = styled.Text`
