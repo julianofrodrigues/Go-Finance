@@ -10,19 +10,19 @@ The application consists of 3 screens, the initial one with a history and cards 
   <h2>Home</h2>
   
   <p align="center">
-    ![Home](https://i.imgur.com/KDBvWV2.png)
+    <img src="https://i.imgur.com/KDBvWV2.png"/>
   </p>
   
   <h2> Register </h2>
 
   <p align="center">
-    ![Register](https://i.imgur.com/xh4nV7k.png) 
+    <img src="https://i.imgur.com/xh4nV7k.png" /> 
   </p>
 
   <h2> Graphic </h2>
 
   <p align="center">
-    ![Graphic](https://i.imgur.com/W1KAQ8G.png) 
+    <img src="https://i.imgur.com/W1KAQ8G.png" /> 
   </p>
     
 </details>
